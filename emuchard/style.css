@@ -1,0 +1,286 @@
+/* Reseteo básico y tipografía */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Encabezado */
+.site-header {
+  background-color: #1a1a1a;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.logo-header {
+  width: 100px!important;         
+  height: auto;        
+  object-fit: contain; 
+  display: inline-block;
+ 
+  color: #ffffff;
+}
+
+/* Secciones y Retículas */
+.grid-section {
+  margin: 3rem 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.platform-tag {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #00adb5;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* Botones */
+.card-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  flex: 1;
+}
+
+.btn-primary {
+  background-color: #00adb5;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #00888e;
+}
+
+.btn-secondary {
+  background-color: #333333;
+  color: #cccccc;
+}
+
+.btn-secondary:hover {
+  background-color: #444444;
+}
+
+/* Pie de página */
+.site-footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 3rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid #2a2a2a;
+}
+
+.site-footer h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  color: #888888;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.copyright {
+  color: #666666;
+  font-size: 0.85rem;
+}
+/* Estilos para la sección Hero */
+.hero-section {
+  background-color: #222222; /* Fondo oscuro del bloque */
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-content {
+  flex: 1;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #cccccc;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #dddddd;
+  max-width: 500px;
+}
+
+.hero-image-container {
+  width: 350px !important; /* Ajustamos a un tamaño visible de logo (puedes cambiar 50px) */
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.hero-image {
+  width: 120px;
+  
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+/* Estilos para la sección Misión y Archivo */
+.about-section {
+  background-color: #161616; /* Fondo oscuro levemente diferenciado */
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  max-width: 850px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-subtitle {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 1.5rem;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  flex: 1;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Título */
+.main-title {
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+/* Layout de Requisitos */
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.spec-card {
+  background-color: #1d1d1d;
+  padding: 2rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #2a2a2a;
+}
+
+.spec-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.spec-group {
+  margin-bottom: 1.5rem;
+}
+
+.spec-group h3 {
+  color: #2ed573; /* Verde para destacar MÍNIMOS / RECOMENDADOS */
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.spec-group ul {
+  list-style: none;
+}
+
+.spec-group li {
+  font-size: 0.85rem;
+  color: #cccccc;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.spec-group li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #cccccc;
+}
+
+.spec-group li strong {
+  color: #ffffff;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #777777;
+  margin-top: 1rem;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #222222;
+  padding: 2.5rem 1rem 1.5rem;
+  margin-top: 4rem;
+  background-color: #121212;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin: 1rem 0 2rem;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #1a1a1a;
+  padding-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #666666;
+}
+
+.tagline {
+  color: #777777;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+}
