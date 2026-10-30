@@ -8,7 +8,7 @@ El objetivo principal es ofrecer un punto de acceso seguro y actualizado, redire
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
 * **Centralización:** Encuentra emuladores y sitios de ROMs organizados por consola en un solo lugar.
 * **Redirección Segura:** Enlaces filtrados para garantizar descargas desde sitios confiables y sin publicidad engañosa.
