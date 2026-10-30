@@ -17,7 +17,7 @@ El objetivo principal es ofrecer un punto de acceso seguro y actualizado, redire
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+##Tecnologías Utilizadas
 
 * **Frontend:** [HTML5,CSS3,JavaScript]
 * **Backend:** *Actual:* Datos locales temporalmente estructurados
@@ -26,7 +26,7 @@ El objetivo principal es ofrecer un punto de acceso seguro y actualizado, redire
 
 ---
 
-## Instalación y Uso Local
+##Instalación y Uso Local
 
 Si quieres ejecutar el proyecto localmente para desarrollo o pruebas:
 
